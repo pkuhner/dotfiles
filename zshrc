@@ -2,6 +2,11 @@ autoload -Uz promptinit
 promptinit
 prompt redhat
 
+if [ -f ~/.dotfiles/zsh/git_prompt.zsh ]; then
+    . ~/.dotfiles/zsh/git_prompt.zsh  
+    RPROMPT='$(git_prompt_string)'
+fi
+
 ### Auto-completion
 
 autoload -Uz compinit
