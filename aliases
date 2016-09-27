@@ -1,0 +1,45 @@
+# Colors and human-friendliness
+alias ls="ls -lh --color=auto"
+alias grep="grep --color=auto"
+alias df="df -h"
+alias du="du -h -d 2"
+
+# Navigation and listing
+alias lsa="ls -a"
+alias cd..="cd .."
+alias ..="cd .."
+alias mkdir="mkdir -pv"
+
+# apt
+alias aptu="sudo apt-get update"
+alias apti="sudo apt-get install"
+alias apts="sudo apt-cache search"
+
+# dnf
+alias dnfu="sudo dnf update"
+alias dnfi="sudo dnf install"
+alias dnfs="sudo dnf search"
+
+# Git
+alias gcom="git commit"
+alias gpush="git push"
+alias gclone="git clone"
+alias gpull="git pull"
+alias gstat="git status"
+alias gdiff="git diff"
+alias glog="git log"
+
+# Other
+alias ping5="ping -c 5"
+alias wget="wget -c"
+alias top="htop"
+alias fuck="sudo $(history -p \!\!)"
+
+# Safety first
+alias mv="mv -i"
+alias cp="cp -i"
+alias ln="ln -i"
+alias rm="rm -i"
+alias chown="chown --preserve-root"
+alias chmod="chmod --preserve-root"
+alias chgrp="chgrp --preserve-root"
