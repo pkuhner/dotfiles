@@ -10,7 +10,7 @@ filetype plugin on
 filetype indent on
 
 set background=dark
-colorscheme solarized
+colorscheme desert
 
 set mouse=a
 set showmode
