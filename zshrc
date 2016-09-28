@@ -1,6 +1,11 @@
-autoload -Uz promptinit
-promptinit
-prompt redhat
+#autoload -Uz promptinit
+#promptinit
+#prompt redhat
+
+autoload -U colors && colors
+setopt prompt_subst
+
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%2~ %{$reset_color%}%# "
 
 if [ -f ~/.dotfiles/zsh/git_prompt.zsh ]; then
     . ~/.dotfiles/zsh/git_prompt.zsh  
