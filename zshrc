@@ -5,7 +5,7 @@
 autoload -U colors && colors
 setopt prompt_subst
 
-PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%2~ %{$reset_color%}%# "
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[green]%}%2~ %{$reset_color%}%# "
 
 if [ -f ~/.dotfiles/zsh/git_prompt.zsh ]; then
     . ~/.dotfiles/zsh/git_prompt.zsh  
@@ -55,3 +55,6 @@ setopt nobeep
 if [ -f ~/.dotfiles/aliases ]; then
     . ~/.dotfiles/aliases
 fi
+
+WSNPR=~/wsnpr/
+WSNPR_TOSROOT=$WSNPR/tinyos-main/
