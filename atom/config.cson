@@ -1,0 +1,14 @@
+"*":
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+    ]
+    telemetryConsent: "no"
+  editor:
+    showIndentGuide: true
+    tabLength: 4
+  "package-sync": {}
+  welcome:
+    showOnStartup: false

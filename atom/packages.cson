@@ -1,0 +1,13 @@
+packages: [
+  "autocomplete-python"
+  "file-icons"
+  "git-plus"
+  "git-time-machine"
+  "highlight-selected"
+  "language-nesc"
+  "linter"
+  "linter-clang"
+  "linter-flake8"
+  "package-sync"
+  "pigments"
+]
