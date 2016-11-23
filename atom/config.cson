@@ -9,6 +9,10 @@
   editor:
     showIndentGuide: true
     tabLength: 4
+  "linter-flake8":
+    ignoreErrorCodes: [
+      "E501"
+    ]
   "package-sync": {}
   welcome:
     showOnStartup: false
