@@ -5,14 +5,65 @@
       "metrics"
       "exception-reporting"
     ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "__init__.py"
+    ]
     telemetryConsent: "no"
   editor:
     showIndentGuide: true
     tabLength: 4
+  "git-diff":
+    showIconsInEditorGutter: true
+  linter:
+    errorPanelHeight: 82
   "linter-flake8":
     ignoreErrorCodes: [
       "E501"
     ]
-  "package-sync": {}
+  "package-sync":
+    createOnChange: true
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+  wordcount:
+    extensions: [
+      "md"
+      "markdown"
+      "readme"
+      "txt"
+      "rst"
+      "adoc"
+      "log"
+      "msg"
+      "tex"
+    ]
+    goal: 1000
+    goalColor: "rgb(0, 200, 0)"
+    goalLineHeight: "50%"
+    hidechars: true
+".basic.html.text":
+  editor:
+    tabLength: 2
+".bibtex.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".css.source":
+  editor:
+    tabLength: 2
+".latex.tex.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".tex.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true

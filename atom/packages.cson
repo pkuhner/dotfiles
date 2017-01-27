@@ -1,13 +1,18 @@
 packages: [
+  "atom-minify-stand-alone"
   "autocomplete-python"
   "file-icons"
   "git-plus"
   "git-time-machine"
   "highlight-selected"
+  "language-latex"
   "language-nesc"
   "linter"
   "linter-clang"
   "linter-flake8"
   "package-sync"
   "pigments"
+  "pretty-json"
+  "terminal-panel"
+  "wordcount"
 ]
