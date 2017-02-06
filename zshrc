@@ -1,3 +1,8 @@
+function prompt_char {
+    git branch >/dev/null 2>/dev/null && echo  $fg[default]'±' && return
+    echo $fg[default]'○'
+}
+
 #autoload -Uz promptinit
 #promptinit
 #prompt redhat
@@ -5,11 +10,17 @@
 autoload -U colors && colors
 setopt prompt_subst
 
-PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[green]%}%2~ %{$reset_color%}%# "
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$reset_color%}in %{$fg_no_bold[green]%}%2~ %{$reset_color%}
+$(prompt_char) "
 
-if [ -f ~/.dotfiles/zsh/git_prompt.zsh ]; then
-    . ~/.dotfiles/zsh/git_prompt.zsh  
+if [ -f ~/.zsh/git_prompt.zsh ]; then
+    . ~/.zsh/git_prompt.zsh  
     RPROMPT='$(git_prompt_string)'
+fi
+
+if [ -f ~/.zsh/venv.zsh ]; then
+    . ~/.zsh/venv.zsh
+    PROMPT="$(virtualenv_info)%{$reset_color%}${PROMPT}"
 fi
 
 ### Auto-completion
