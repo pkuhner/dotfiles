@@ -30,7 +30,6 @@
     createOnChange: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   wordcount:
@@ -45,9 +44,7 @@
       "msg"
       "tex"
     ]
-    goal: 1000
-    goalColor: "rgb(0, 200, 0)"
-    goalLineHeight: "50%"
+    goalColor: "rgb(0, 85, 255)"
     hidechars: true
 ".basic.html.text":
   editor:
