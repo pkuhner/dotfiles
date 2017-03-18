@@ -4,6 +4,7 @@
     disabledPackages: [
       "metrics"
       "exception-reporting"
+      "linter-clang"
     ]
     ignoredNames: [
       ".git"
