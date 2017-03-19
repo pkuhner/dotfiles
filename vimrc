@@ -3,14 +3,20 @@ call pathogen#infect()
 
 " -- UI
 set title
-syntax enable
 
 filetype on
 filetype plugin on
 filetype indent on
 
-set background=dark
-colorscheme desert
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax on
+colorscheme jellybeans
+let g:jellybeans_overrides = {
+\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+\}
 
 set mouse=a
 set showmode
@@ -24,7 +30,6 @@ set ruler
 set wrap
 
 set scrolloff=5
-set colorcolumn=80
 
 " -- Search
 set ignorecase
