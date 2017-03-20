@@ -1,11 +1,11 @@
-function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo  $fg[default]'±' && return
-    echo $fg[default]'○'
-}
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
 
-#autoload -Uz promptinit
-#promptinit
-#prompt redhat
+function prompt_char {
+    git branch >/dev/null 2>/dev/null && echo  '±' && return
+    echo '○'
+}
+#$fg[default]
 
 autoload -U colors && colors
 setopt prompt_subst
