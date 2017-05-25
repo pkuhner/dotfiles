@@ -27,6 +27,7 @@
     ignoreErrorCodes: [
       "E501"
     ]
+  "linter-ui-default": {}
   "package-sync":
     createOnChange: true
   "tree-view":
@@ -46,7 +47,6 @@
       "tex"
     ]
     goalColor: "rgb(0, 85, 255)"
-    hidechars: true
 ".basic.html.text":
   editor:
     tabLength: 2
