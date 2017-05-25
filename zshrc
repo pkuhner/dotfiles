@@ -23,6 +23,11 @@ if [ -f ~/.zsh/venv.zsh ]; then
     PROMPT="$(virtualenv_info)%{$reset_color%}${PROMPT}"
 fi
 
+### Fix keybindings
+
+bindkey "${terminfo[home]}" beginning-of-line
+bindkey "^[[3~"             delete-char
+
 ### Auto-completion
 
 autoload -Uz compinit
