@@ -74,5 +74,3 @@ if [ -f ~/.dotfiles/aliases ]; then
     . ~/.dotfiles/aliases
 fi
 
-WSNPR=~/wsnpr/
-WSNPR_TOSROOT=$WSNPR/tinyos-main/
