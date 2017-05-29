@@ -33,7 +33,6 @@ alias glog="git log"
 alias ping5="ping -c 5"
 alias wget="wget -c"
 alias top="htop"
-alias fuck="sudo $(history -p \!\!)"
 
 # Safety first
 alias mv="mv -i"
