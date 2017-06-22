@@ -13,10 +13,10 @@ if (has("termguicolors"))
 endif
 
 syntax on
-colorscheme jellybeans
-let g:jellybeans_overrides = {
-\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
-\}
+"colorscheme jellybeans
+"let g:jellybeans_overrides = {
+"\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+"\}
 
 set mouse=a
 set showmode
