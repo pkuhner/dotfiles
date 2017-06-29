@@ -10,7 +10,13 @@ function prompt_char {
 autoload -U colors && colors
 setopt prompt_subst
 
-PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$reset_color%}in %{$fg_no_bold[green]%}%2~ %{$reset_color%}
+if [[ -n $SSH_CLIENT ]]; then
+  prompt_host_color='red'
+else
+  prompt_host_color='green'
+fi
+
+PROMPT="%{$fg[$prompt_host_color]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$reset_color%}in %{$fg_no_bold[yellow]%}%2~ %{$reset_color%}
 $(prompt_char) "
 
 if [ -f ~/.zsh/git_prompt.zsh ]; then
