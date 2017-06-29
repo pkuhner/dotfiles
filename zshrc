@@ -10,7 +10,7 @@ function prompt_char {
 autoload -U colors && colors
 setopt prompt_subst
 
-if [ whoami = "root" ]; then
+if [ `whoami` = "root" ]; then
     prompt_user_color='red'
 else
     prompt_user_color='green'
