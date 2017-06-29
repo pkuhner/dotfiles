@@ -10,13 +10,19 @@ function prompt_char {
 autoload -U colors && colors
 setopt prompt_subst
 
+if [ whoami = "root" ]; then
+    prompt_user_color='red'
+else
+    prompt_user_color='green'
+fi
+
 if [[ -n $SSH_CLIENT ]]; then
   prompt_host_color='red'
 else
-  prompt_host_color='green'
+  prompt_host_color='blue'
 fi
 
-PROMPT="%{$fg[$prompt_host_color]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$reset_color%}in %{$fg_no_bold[yellow]%}%2~ %{$reset_color%}
+PROMPT="%{$fg[$prompt_user_color]%}%n%{$reset_color%}@%{$fg[$prompt_host_color]%}%m %{$reset_color%}in %{$fg_no_bold[yellow]%}%2~ %{$reset_color%}
 $(prompt_char) "
 
 if [ -f ~/.zsh/git_prompt.zsh ]; then
