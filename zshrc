@@ -17,7 +17,7 @@ else
 fi
 
 if [[ -n $SSH_CLIENT ]]; then
-  prompt_host_color='red'
+  prompt_host_color='magenta'
 else
   prompt_host_color='blue'
 fi
