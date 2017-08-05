@@ -5,16 +5,11 @@ function prompt_char {
     git branch >/dev/null 2>/dev/null && echo  '±' && return
     echo '○'
 }
-#$fg[default]
 
 autoload -U colors && colors
 setopt prompt_subst
 
-if [ `whoami` = "root" ]; then
-    prompt_user_color='red'
-else
-    prompt_user_color='green'
-fi
+prompt_user_color='green'
 
 if [[ -n $SSH_CLIENT ]]; then
   prompt_host_color='magenta'
@@ -36,12 +31,10 @@ if [ -f ~/.zsh/venv.zsh ]; then
 fi
 
 ### Fix keybindings
-
 bindkey "${terminfo[home]}" beginning-of-line
 bindkey "^[[3~"             delete-char
 
 ### Auto-completion
-
 autoload -Uz compinit
 compinit
 
@@ -55,7 +48,6 @@ zstyle ':completion:*:*:kill:*' menu yes select
 zstyle ':completion:*:kill:*' force-list always
 
 ### History
-
 if [ -z "$HISTFILE" ]; then
     HISTFILE=$HOME/.zsh_history
 fi
