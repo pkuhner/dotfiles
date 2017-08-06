@@ -78,3 +78,5 @@ if [ -f ~/.dotfiles/aliases ]; then
     . ~/.dotfiles/aliases
 fi
 
+export GOPATH=$HOME/.gopath
+export PATH=$GOPATH:$GOPATH/bin:$PATH
