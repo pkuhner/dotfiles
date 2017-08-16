@@ -21,8 +21,7 @@
     tabLength: 4
   "git-diff":
     showIconsInEditorGutter: true
-  linter:
-    errorPanelHeight: 82
+  linter: {}
   "linter-flake8":
     ignoreErrorCodes: [
       "E501"
