@@ -1,5 +1,6 @@
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
+export TERM=xterm-256color
 export TERM=screen-256color
 
 function prompt_char {
