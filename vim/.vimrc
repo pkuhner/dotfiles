@@ -10,11 +10,9 @@ filetype indent on
 
 set t_Co=256
 
-syntax on
-"colorscheme jellybeans
-"let g:jellybeans_overrides = {
-"\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
-"\}
+syntax enable
+set background=dark
+colorscheme desert
 
 set mouse=a
 set showmode
