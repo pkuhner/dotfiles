@@ -12,7 +12,13 @@ set t_Co=256
 
 syntax enable
 set background=dark
+let g:nord_italic_comments = 1
 colorscheme nord
+
+let g:airline#extensions#hunks#enabled=1
+let g:airline#extensions#branch#enabled=1
+let g:airline_powerline_fonts = 1
+set laststatus=2
 
 set mouse=a
 set showmode
