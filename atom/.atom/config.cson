@@ -26,7 +26,8 @@
     ignoreErrorCodes: [
       "E501"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "package-sync":
     createOnChange: true
   "tree-view":
