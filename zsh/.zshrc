@@ -75,8 +75,8 @@ setopt hist_ignore_space
 
 setopt nobeep
 
-if [ -f ~/.dotfiles/aliases ]; then
-    . ~/.dotfiles/aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
 fi
 
 export GOPATH=$HOME/.gopath
