@@ -36,7 +36,6 @@ set incsearch
 set hlsearch
 
 " -- Beep
-set visualbell
 set noerrorbells
 
 " -- Plugins
