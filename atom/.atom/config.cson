@@ -1,6 +1,7 @@
 "*":
   core:
     autoHideMenuBar: true
+    destroyEmptyPanes: false
     disabledPackages: [
       "metrics"
       "exception-reporting"
@@ -16,6 +17,10 @@
       "__init__.py"
     ]
     telemetryConsent: "no"
+    themes: [
+      "nord-atom-ui"
+      "nord-atom-syntax"
+    ]
   editor:
     showIndentGuide: true
     tabLength: 4
@@ -30,6 +35,7 @@
     showPanel: true
   "package-sync":
     createOnChange: true
+    forceOverwrite: true
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
