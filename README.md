@@ -1,8 +1,6 @@
 # dotfiles
 
-
 My dotfiles for zsh, vim and so on.
-
 
 Copyright © 2017 Pierre Kuhner <pierre@pcksr.net>
 
