@@ -8,9 +8,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-if (has("termguicolors"))
- set termguicolors
-endif
+set t_Co=256
 
 syntax on
 "colorscheme jellybeans
