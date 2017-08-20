@@ -1,7 +1,6 @@
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export TERM=xterm-256color
-export TERM=screen-256color
 
 function prompt_char {
     git branch >/dev/null 2>/dev/null && echo  '±' && return
@@ -73,7 +72,6 @@ setopt inc_append_history
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
-
 setopt nobeep
 
 if [ -f ~/.aliases ]; then
@@ -82,3 +80,5 @@ fi
 
 export GOPATH=$HOME/.gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
+
+eval `dircolors ~/.dir_colors`
