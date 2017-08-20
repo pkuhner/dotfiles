@@ -26,6 +26,8 @@ set ruler
 set wrap
 
 set scrolloff=5
+set sidescroll=20
+set sidescrolloff=20
 
 " -- Search
 set ignorecase
