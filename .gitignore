@@ -1,9 +1,10 @@
 # Atom sync
-/atom/blob-store/
-/atom/compile-cache/
-/atom/packages/
-/atom/storage/
-/atom/dev
-/atom/.apm
-/atom/.node-gyp
-/atom/.npm
+/atom/.atom/blob-store/
+/atom/.atom/compile-cache/
+/atom/.atom/packages/
+/atom/.atom/storage/
+/atom/.atom/dev
+/atom/.atom/.apm
+/atom/.atom/.node-gyp
+/atom/.atom/.npm
+/atom/.atom/nohup.out
