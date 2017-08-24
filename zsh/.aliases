@@ -1,5 +1,5 @@
 # Colors and human-friendliness
-alias ls="ls -lh --color=auto"
+alias ls="ls -lh --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 alias df="df -h"
 alias du="du -h -d 2"
