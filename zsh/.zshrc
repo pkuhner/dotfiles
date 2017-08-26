@@ -39,6 +39,11 @@ bindkey "^[[3~"             delete-char
 autoload -Uz compinit
 compinit
 
+## Syntax highlighting
+if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
@@ -78,7 +83,8 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+export PATH=$PATH:$HOME/.local/bin
 export GOPATH=$HOME/.gopath
-export PATH=$GOPATH:$GOPATH/bin:$PATH
+export PATH=$PATH:$GOPATH:$GOPATH/bin
 
 eval `dircolors ~/.dir_colors`
