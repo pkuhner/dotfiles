@@ -22,6 +22,8 @@
       "nord-atom-syntax"
     ]
   editor:
+    fontFamily: "Operator Mono"
+    fontSize: 15
     showIndentGuide: true
     tabLength: 4
   "git-diff":
@@ -31,8 +33,7 @@
     ignoreErrorCodes: [
       "E501"
     ]
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true
