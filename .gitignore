@@ -8,3 +8,5 @@
 /atom/.atom/.node-gyp
 /atom/.atom/.npm
 /atom/.atom/nohup.out
+
+.idea
