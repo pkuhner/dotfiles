@@ -2,34 +2,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export TERM=xterm-256color
 
-function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo  '±' && return
-    echo '\$'
-}
-
-autoload -U colors && colors
-setopt prompt_subst
-
-prompt_user_color='green'
-
-if [[ -n $SSH_CLIENT ]]; then
-  prompt_host_color='magenta'
-else
-  prompt_host_color='blue'
-fi
-
-PROMPT="%{$fg[$prompt_user_color]%}%n%{$reset_color%}@%{$fg[$prompt_host_color]%}%m %{$reset_color%}in %{$fg_no_bold[yellow]%}%2~ %{$reset_color%}
-$(prompt_char) "
-
-if [ -f ~/.zsh/git_prompt.zsh ]; then
-    . ~/.zsh/git_prompt.zsh  
-    RPROMPT='$(git_prompt_string)'
-fi
-
-if [ -f ~/.zsh/venv.zsh ]; then
-    . ~/.zsh/venv.zsh
-    PROMPT="$(virtualenv_info)%{$reset_color%}${PROMPT}"
-fi
+source ~/.zsh_plugins.sh
 
 ### Fix keybindings
 bindkey "${terminfo[home]}" beginning-of-line
